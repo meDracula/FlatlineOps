@@ -1,0 +1,27 @@
+grafana:
+  plugins:
+    - grafana-x-ray-datasource
+  grafana.ini:
+    log:
+      level: info
+    unified_alerting:
+      enabled: true
+    alerting:
+      enabled: true
+    revisionHistroyLimit: 1
+    persistance:
+      enabled: true
+    imageRenderer:
+      # Enable the image renderer deployment & service
+      enabled: false
+      revisionHistoryLimit: 1
+    sidecar:
+      dashboards:
+        enabled: true
+    serviceMonitor:
+      enabled: true
+      labels:
+        release: monitoring
+
+  configMapAnnotations:
+    argocd.argoproj.io/sync-options: Replace=true
