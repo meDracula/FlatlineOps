@@ -6,8 +6,6 @@ grafana:
       level: info
     unified_alerting:
       enabled: true
-    alerting:
-      enabled: true
     revisionHistroyLimit: 1
     persistance:
       enabled: true
