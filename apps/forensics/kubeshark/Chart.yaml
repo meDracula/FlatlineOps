@@ -1,0 +1,9 @@
+apiVersion: v2
+name: kubeshark
+version: 52.9.0
+appVersion: 52.9.0
+dependencies:
+  - name: kubeshark
+    version: 52.9.0
+    repository: https://helm.kubeshark.co
+
