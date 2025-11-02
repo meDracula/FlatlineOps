@@ -11,12 +11,7 @@ falco:
       replicaCount: 1
       redis:
         storageEnabled: false
-      service:
-        type: NodePort
-        port: 2802
-        targetPort: 2802
-        nodePort: 30128
-  
+
   falcoctl:
     artifact:
       install:
