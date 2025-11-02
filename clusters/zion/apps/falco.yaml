@@ -16,6 +16,6 @@ spec:
     namespace: falco
     server: https://kubernetes.default.svc
   syncPolicy:
-    automated: {}
     syncOptions:
     - CreateNamespace=true
+    automated: {}
