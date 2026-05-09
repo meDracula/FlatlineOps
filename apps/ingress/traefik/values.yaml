@@ -1,0 +1,22 @@
+traefik:
+  ingressRoute:
+    dashboard:
+      enabled: true
+      entryPoints:
+        - web
+        - websecure
+      matchRule: Host(`traefik.kube.mikrospace.se`)
+  ports:
+    web:
+      redirectTo:
+        port: websecure
+
+  providers:
+    kubernetesGateway:
+      enabled: true
+
+  gateway:
+    listeners:
+      web:
+        namespacePolicy:
+          from: All
