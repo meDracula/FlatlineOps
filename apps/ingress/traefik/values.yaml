@@ -4,7 +4,6 @@ traefik:
       enabled: true
       entryPoints:
         - web
-        - websecure
       matchRule: Host(`traefik.kube.mikrospace.se`)
 
   providers:
