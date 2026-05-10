@@ -6,10 +6,6 @@ traefik:
         - web
         - websecure
       matchRule: Host(`traefik.kube.mikrospace.se`)
-  ports:
-    web:
-      redirectTo:
-        port: websecure
 
   providers:
     kubernetesGateway:
