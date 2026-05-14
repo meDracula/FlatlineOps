@@ -1,14 +1,2 @@
-metallb:
-  speaker:
-    labels:
-      pod-security.kubernetes.io/enforce: privileged
-      pod-security.kubernetes.io/audit: privileged
-      pod-security.kubernetes.io/warn: privileged
-  controller:
-    labels:
-      pod-security.kubernetes.io/enforce: privileged
-      pod-security.kubernetes.io/audit: privileged
-      pod-security.kubernetes.io/warn: privileged
-
 ipAddressPool:
   - 10.10.202.50-10.10.202.254
