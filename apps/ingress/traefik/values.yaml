@@ -1,4 +1,8 @@
 traefik:
+  service:
+    annotations:
+      metallb.universe.tf/address-pool: ingress-pool
+
   ingressRoute:
     dashboard:
       enabled: true
