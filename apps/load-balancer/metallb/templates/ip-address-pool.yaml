@@ -1,10 +1,10 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: lab-ip-pool
+  name: ingress-pool
   namespace: {{ .Release.Namespace }}
 spec:
-  {{- with .Values.ipAddressPool }}
+  {{- with .Values.ingress.ipAddressPool }}
   addresses:
     {{- toYaml . | nindent 4 }}
   {{- end }}
