@@ -1,7 +1,7 @@
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
-metdata:
-  name: lab-l2-advert
+metadata:
+  name: ingress-l2-advert
   namespace: {{ .Release.Namespace }}
 spec:
   ipAddressPools:
